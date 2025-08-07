@@ -1,0 +1,625 @@
+<html>
+<head>
+<title>TestNG:  tutorialsninja Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>tutorialsninja Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>42/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Aug 07 16:51:08 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>646 seconds (646915 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds()'><b>verifyRegistringAccountAndCheckingPasswordComplexityStanderds</b><br>Test class: tutorialsninja.tests.Register<br>Parameters: {Passwords=ABCD456#}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace966541452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace966541452'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>8</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds()'><b>verifyRegistringAccountAndCheckingPasswordComplexityStanderds</b><br>Test class: tutorialsninja.tests.Register<br>Parameters: {Passwords=12345.0}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1140684760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1140684760'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>8</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds()'><b>verifyRegistringAccountAndCheckingPasswordComplexityStanderds</b><br>Test class: tutorialsninja.tests.Register<br>Parameters: {Passwords=abcd1234}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1015539793", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1015539793'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>8</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringAccountUsingInvalidEmail()'><b>verifyRegisteringAccountUsingInvalidEmail</b><br>Test class: tutorialsninja.tests.Register</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at tutorialsninja.tests.Register.verifyRegisteringAccountUsingInvalidEmail(Register.java:286)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace283492252", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace283492252'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertFalse(Assert.java:67)
+	at org.testng.Assert.assertFalse(Assert.java:77)
+	at tutorialsninja.tests.Register.verifyRegisteringAccountUsingInvalidEmail(Register.java:286)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>10</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisterAccountProvidingInvalidTelephoneNumber()'><b>verifyRegisterAccountProvidingInvalidTelephoneNumber</b><br>Test class: tutorialsninja.tests.Register</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tutorialsninja.tests.Register.verifyRegisterAccountProvidingInvalidTelephoneNumber(Register.java:330)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1963906615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1963906615'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at tutorialsninja.tests.Register.verifyRegisterAccountProvidingInvalidTelephoneNumber(Register.java:330)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>5</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringAccountFieldsHeightWidthAligment()'><b>verifyRegisteringAccountFieldsHeightWidthAligment</b><br>Test class: tutorialsninja.tests.Register</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tutorialsninja.tests.Register.verifyRegisteringAccountFieldsHeightWidthAligment(Register.java:682)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1215858771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1215858771'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at tutorialsninja.tests.Register.verifyRegisteringAccountFieldsHeightWidthAligment(Register.java:682)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>89</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds()'><b>verifyRegistringAccountAndCheckingPasswordComplexityStanderds</b><br>Test class: tutorialsninja.tests.Register<br>Parameters: {Passwords=abcdefghi}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1036343065", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1036343065'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>8</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds()'><b>verifyRegistringAccountAndCheckingPasswordComplexityStanderds</b><br>Test class: tutorialsninja.tests.Register<br>Parameters: {Passwords=abcd123$}</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1958168955", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1958168955'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at tutorialsninja.tests.Register.verifyRegistringAccountAndCheckingPasswordComplexityStanderds(Register.java:444)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>7</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringWithAllFeild()'><b>verifyRegisteringWithAllFeild</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>3</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyDifferentWayOfNavigatingToLoginPage()'><b>verifyDifferentWayOfNavigatingToLoginPage</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>4</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyBreadcrumbPageHeadingTitleAndPageURLOfLoginPage()'><b>verifyBreadcrumbPageHeadingTitleAndPageURLOfLoginPage</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyResigteringAccountWithoutFillFields()'><b>verifyResigteringAccountWithoutFillFields</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringAccountUsingExistingEmail()'><b>verifyRegisteringAccountUsingExistingEmail</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>2</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyForgottendPasswordLinkOnLoginPage()'><b>verifyForgottendPasswordLinkOnLoginPage</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyPasswordIsStoredInHTMLCodeOfThePage()'><b>verifyPasswordIsStoredInHTMLCodeOfThePage</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoginWithValidCredentials()'><b>verifyLoginWithValidCredentials</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>2</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyTextEnteredIntoPasswordFieldIsToggledToHideItsVisibility()'><b>verifyTextEnteredIntoPasswordFieldIsToggledToHideItsVisibility</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoginFunctionalityInAllEnvioronments()'><b>verifyLoginFunctionalityInAllEnvioronments</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoginWithInvalidCredentials()'><b>verifyLoginWithInvalidCredentials</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoginFieldsPlaceholders()'><b>verifyLoginFieldsPlaceholders</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyBrowserBackAfterLogin()'><b>verifyBrowserBackAfterLogin</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>5</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyVisibilityTogglineOfPasswordFieldOnRegisterAccount()'><b>verifyVisibilityTogglineOfPasswordFieldOnRegisterAccount</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyPrivacyPolicyFielOnRegisterAccountPage()'><b>verifyPrivacyPolicyFielOnRegisterAccountPage</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisterAccountUsingKeyboardKeys()'><b>verifyRegisterAccountUsingKeyboardKeys</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>21</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringAccountWithoutEnteringPasswordIntoConfirmField()'><b>verifyRegisteringAccountWithoutEnteringPasswordIntoConfirmField</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoginWithoutCredentials()'><b>verifyLoginWithoutCredentials</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoginWithvalidEmailAndInvalidPassword()'><b>verifyLoginWithvalidEmailAndInvalidPassword</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyWorkingOfEveryLinkOnRegisterAccountPage()'><b>verifyWorkingOfEveryLinkOnRegisterAccountPage</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>42</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoggingIntoApplicationAfterChaningPassword()'><b>verifyLoggingIntoApplicationAfterChaningPassword</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>9</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyUIOfLoginPage()'><b>verifyUIOfLoginPage</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyNavigatingToDifferentPageFromLoginPage()'><b>verifyNavigatingToDifferentPageFromLoginPage</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>39</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyCopyingOfTextEnteredIntoPasswordField()'><b>verifyCopyingOfTextEnteredIntoPasswordField</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisterAccountInDifferentEnvironment()'><b>verifyRegisterAccountInDifferentEnvironment</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>3</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringAccountByProvidingMismatchingPassword()'><b>verifyRegisteringAccountByProvidingMismatchingPassword</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringAccountBySayingNoToNewsletter()'><b>verifyRegisteringAccountBySayingNoToNewsletter</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>4</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyBrowserBackAfterLoggingOut()'><b>verifyBrowserBackAfterLoggingOut</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>4</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringWithMandatoryFeild()'><b>verifyRegisteringWithMandatoryFeild</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>3</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyPlaceHoldersofTextFieldsInRegisterAccountPage()'><b>verifyPlaceHoldersofTextFieldsInRegisterAccountPage</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyBreadcrumbURLHeadingTitleOfRegisterAccountPage()'><b>verifyBreadcrumbURLHeadingTitleOfRegisterAccountPage</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyNumberOfUnsuccessfulLoginAttemps()'><b>verifyNumberOfUnsuccessfulLoginAttemps</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>8</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringAccountBySubscribingToNewsletter()'><b>verifyRegisteringAccountBySubscribingToNewsletter</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>4</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoggingIntoTheApplicationUsingKeyboardKeys()'><b>verifyLoggingIntoTheApplicationUsingKeyboardKeys</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>6</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyNavigatingToRegisterAccountUsingMultipleWay()'><b>verifyNavigatingToRegisterAccountUsingMultipleWay</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>3</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyUIOfRegisterAccountPage()'><b>verifyUIOfRegisterAccountPage</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoginWithInactiveCredentials()'><b>verifyLoginWithInactiveCredentials</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyMandatoryFeildsSymbolAndColorInRegisterAccountPage()'><b>verifyMandatoryFeildsSymbolAndColorInRegisterAccountPage</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>0</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisteringAccountWithOnlySpaces()'><b>verifyRegisteringAccountWithOnlySpaces</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>2</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Login.verifyLoginWithInvalidEmailAndValidPassword()'><b>verifyLoginWithInvalidEmailAndValidPassword</b><br>Test class: tutorialsninja.tests.Login</td>
+<td></td>
+<td>1</td>
+<td>tutorialsninja.tests.Login@5e0e82ae</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyLeadingAndTrailingSpacesWhileRegisteringAccount()'><b>verifyLeadingAndTrailingSpacesWhileRegisteringAccount</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>4</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+<tr>
+<td title='tutorialsninja.tests.Register.verifyRegisterAccountWithoutPrivacyPolicySelection()'><b>verifyRegisterAccountWithoutPrivacyPolicySelection</b><br>Test class: tutorialsninja.tests.Register</td>
+<td></td>
+<td>2</td>
+<td>tutorialsninja.tests.Register@515c6049</td></tr>
+</table><p>
+</body>
+</html>

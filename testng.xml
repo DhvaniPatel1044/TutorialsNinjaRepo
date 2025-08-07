@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="tutorialsninja Suite">
+<listeners>
+   <listener class-name="listeners.MyListeners" />
+</listeners>
+  <test thread-count="5" name="tutorialsninja Tests">
+    <classes>
+     <class name="tutorialsninja.tests.Register"/>
+      <class name="tutorialsninja.tests.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
